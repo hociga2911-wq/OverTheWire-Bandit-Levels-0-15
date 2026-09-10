@@ -21,7 +21,8 @@ ls -la
 <img width="338" height="60" alt="image" src="https://github.com/user-attachments/assets/2892439a-ee31-42ed-959a-c724e5a73836" />
 
 
-<img width="338" height="60" alt="image" src="https://github.com/user-attachments/assets/6ff623c6-0d24-47a6-b8de-23fbdca82b1b" />
+<img width="382" height="52" alt="image" src="https://github.com/user-attachments/assets/afa83a94-2ee9-4262-98a7-637511862091" />
+
 
 
 `ls` does not normally show hidden files. `ls -la` reveals them.
@@ -40,7 +41,7 @@ cat ./...Hiding-From-You
 <img width="661" height="36" alt="image" src="https://github.com/user-attachments/assets/31264815-7576-4bcb-b2b2-187671cd9fec" />
 
 
-TH
+We got a password to enter level 4.
 
 
 Then:
@@ -48,6 +49,9 @@ Then:
 ```bash
 ssh bandit4@bandit.labs.overthewire.org -p 2220
 ```
+
+Enter the password to enter the level 4
+
 
 <img width="845" height="366" alt="image" src="https://github.com/user-attachments/assets/bcae02cf-1d74-444f-a5a2-ba97ff3be005" />
 
