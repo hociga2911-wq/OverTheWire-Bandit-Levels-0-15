@@ -21,7 +21,12 @@ grep "millionth" data.txt
 
 `grep` searches the file for the specified pattern and prints the matching line.
 
+After using the above command we get a password for next level which is next to the word "millionth".
+
+
 Then:
+
+Using the password enter into the next level.
 
 
 ```bash
