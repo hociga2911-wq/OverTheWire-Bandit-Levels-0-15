@@ -178,3 +178,10 @@ means:
 Display the contents of the readme file.
 
 The output contains the password required for Bandit Level 1.
+
+# Step 5 - Exit the Bandit0
+
+Exit the Bandit0 using exit command
+
+<img width="610" height="80" alt="image" src="https://github.com/user-attachments/assets/fe0ec7fa-30f1-41e4-904a-33f1a1da211a" />
+
