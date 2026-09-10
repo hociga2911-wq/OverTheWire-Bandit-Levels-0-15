@@ -44,24 +44,9 @@ This is also a good security practice: credentials should not be committed to a 
 | 13 → 14 | SSH private-key authentication |
 | 14 → 15 | TCP, localhost, ports and netcat |
 
-## Evidence / Screenshots
 
-For a staff submission, I recommend adding one screenshot for each level showing:
-1. the logged-in Bandit username,
-2. the important command,
-3. the successful result,
-4. optionally the next SSH login.
 
-Suggested names:
 
-```text
-screenshots/
-├── level-00-01.png
-├── level-01-02.png
-├── level-02-03.png
-...
-└── level-14-15.png
-```
 
 ## What I Learned
 
