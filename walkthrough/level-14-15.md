@@ -22,12 +22,12 @@ nc localhost 30000
 
 
 
-Then paste the current password and press Enter.
+Then paste the current password and press Enter to get the new passwordd
 
 
 Finally:
 
-Enter the password that already.find out in above step.
+Enter the password that already find out in above step.
 
 
 ```bash
