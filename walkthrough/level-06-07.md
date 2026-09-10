@@ -6,6 +6,17 @@ Find a file anywhere on the server that is owned by user `bandit7`, owned by gro
 
 ## 2. Step-by-Step Solution
 
+Use ls to list the files but there is no file found.
+
+
+<img width="301" height="34" alt="image" src="https://github.com/user-attachments/assets/35270775-0d5f-4b35-9092-71fdf68327bf" />
+
+
+
+For this level they already told that the file will be in the user `bandit7`, owned by group `bandit6`, and exactly 33 bytes. So we use the below syntax.
+
+
+
 ```bash
 find / -user bandit7 -group bandit6 -size 33c 2>/dev/null
 ```
@@ -18,34 +29,28 @@ Read the path returned by `find`. In the standard layout:
 cat /var/lib/dpkg/info/bandit7.password
 ```
 
+
+<img width="1076" height="79" alt="image" src="https://github.com/user-attachments/assets/0687f52f-9167-47a5-8ea3-2a1fd3d0644c" />
+
+
+After read the path we get a password to enter next level.
+
 Then:
+
+Enter the password to enter next level.
+
 
 ```bash
 ssh bandit7@bandit.labs.overthewire.org -p 2220
 ```
 
 
-## 3. Explanation
+<img width="871" height="366" alt="image" src="https://github.com/user-attachments/assets/b403bbf7-2727-4adc-9b03-2109821560b8" />
 
-The main idea is to use the information given by the challenge to narrow down the correct file, data representation, authentication method, or network service. The commands above are intentionally shown in the order they should be executed.
 
-## 4. Key Concepts Learned
 
-- Filesystem-wide search\n- ownership\n- groups\n- byte-size filtering\n- stderr redirection.
 
-## 5. Result
-
-**Status:** Completed.
-
-**Password obtained:** Do not publish the password in GitHub. Save it privately in your own notes if needed.
-
-## 6. Evidence
-
-Add your screenshot here:
-
-`../screenshots/level-06-07.png`
-
-## 7. Next Level
+## 3. Next Level
 
 Use the password obtained from the terminal to authenticate to the next Bandit user on SSH port `2220`.
 
