@@ -12,50 +12,35 @@ First confirm the current user's password:
 cat /etc/bandit_pass/bandit14
 ```
 
-Send it to the local service with netcat:
-
-```bash
-echo "YOUR_BANDIT14_PASSWORD" | nc localhost 30000
-```
-
-A successful response returns the password for `bandit15`.
-
-You can also use an interactive connection:
 
 ```bash
 nc localhost 30000
 ```
 
+
+<img width="526" height="117" alt="image" src="https://github.com/user-attachments/assets/263301c2-f931-412b-baf8-a0520c91db1c" />
+
+
+
 Then paste the current password and press Enter.
 
+
 Finally:
+
+Enter the password that already.find out in above step.
+
 
 ```bash
 ssh bandit15@bandit.labs.overthewire.org -p 2220
 ```
 
 
-## 3. Explanation
+<img width="949" height="411" alt="image" src="https://github.com/user-attachments/assets/bf07b0ad-4bc7-421b-9804-eab82d73d7d0" />
 
-The main idea is to use the information given by the challenge to narrow down the correct file, data representation, authentication method, or network service. The commands above are intentionally shown in the order they should be executed.
 
-## 4. Key Concepts Learned
 
-- TCP\n- localhost\n- ports\n- netcat (`nc`)\n- pipes\n- standard input/output.
 
-## 5. Result
-
-**Status:** Completed.
-
-**Password obtained:** Do not publish the password in GitHub. Save it privately in your own notes if needed.
-
-## 6. Evidence
-
-Add your screenshot here:
-
-`../screenshots/level-14-15.png`
-
-## 7. Next Level
+## 3. Next Level
 
 Use the password obtained from the terminal to authenticate to the next Bandit user on SSH port `2220`.
 
