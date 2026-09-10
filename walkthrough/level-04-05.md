@@ -39,9 +39,7 @@ ssh bandit5@bandit.labs.overthewire.org -p 2220
 
 
 
-## 3
-
-. Next Level
+## 3. Next Level
 
 Use the password obtained from the terminal to authenticate to the next Bandit user on SSH port `2220`.
 
