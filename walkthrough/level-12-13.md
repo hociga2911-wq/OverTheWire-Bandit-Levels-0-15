@@ -75,7 +75,9 @@ cat data8
 
 
 
+
 Important: do not blindly guess the next format. After every extraction, use `file` and choose the decompression tool that matches the detected format.
+
 
 
 
@@ -83,11 +85,21 @@ Important: do not blindly guess the next format. After every extraction, use `fi
 
 
 
+
+
+In data 8 we obtain our password for next level.
+
+
+
 Then:
+
+Use the password to enter next level.
+
 
 ```bash
 ssh bandit13@bandit.labs.overthewire.org -p 2220
 ```
+
 
 <img width="1082" height="384" alt="image" src="https://github.com/user-attachments/assets/f276328e-05aa-4b6e-b9c4-34b94a2b8bba" />
 
