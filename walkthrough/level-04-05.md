@@ -11,6 +11,7 @@ cd inhere
 file ./*
 ```
 
+
 Most files will be identified as `data`; one will be identified as `ASCII text`.
 
 Read the ASCII text file. In the standard layout it is:
@@ -21,6 +22,11 @@ cat ./-file07
 
 The `./` prefix prevents the filename beginning with `-` from being treated as an option.
 
+
+<img width="774" height="287" alt="image" src="https://github.com/user-attachments/assets/f73f4fb8-418a-442c-8f22-c44fdd8b6145" />
+
+
+
 Then:
 
 ```bash
@@ -28,27 +34,14 @@ ssh bandit5@bandit.labs.overthewire.org -p 2220
 ```
 
 
-## 3. Explanation
+<img width="1003" height="346" alt="image" src="https://github.com/user-attachments/assets/bfdecfc2-cf61-4e98-b219-246d787475a2" />
 
-The main idea is to use the information given by the challenge to narrow down the correct file, data representation, authentication method, or network service. The commands above are intentionally shown in the order they should be executed.
 
-## 4. Key Concepts Learned
 
-- File-type identification\n- ASCII text\n- binary data\n- wildcards\n- `file`.
 
-## 5. Result
+## 3
 
-**Status:** Completed.
-
-**Password obtained:** Do not publish the password in GitHub. Save it privately in your own notes if needed.
-
-## 6. Evidence
-
-Add your screenshot here:
-
-`../screenshots/level-04-05.png`
-
-## 7. Next Level
+. Next Level
 
 Use the password obtained from the terminal to authenticate to the next Bandit user on SSH port `2220`.
 
