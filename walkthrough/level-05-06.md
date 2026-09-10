@@ -12,11 +12,13 @@ After entering into level 5. Use ls for listing files.There is a inhere director
 
 
 
+By using the below syntax, we can easily find out a particular directory with particular file.
+
+
 ```bash
-find inhere -type f -size 1033c 
+find -type f -size 1033c 
 ```
 
-By using the above syntax, we can easily find out a particular directory with particular file.
 
 
 <img width="641" height="55" alt="image" src="https://github.com/user-attachments/assets/364963b3-36d6-44b6-bb2d-a25b9586becb" />
@@ -29,7 +31,7 @@ Read the matching file. In the standard layout:
 Using the cat command we can easily find out the password in the particular directory in particular file.
 
 ```bash
-cat inhere/maybehere07/.file2
+cat ./maybehere07/.file2
 ```
 
 <img width="638" height="29" alt="image" src="https://github.com/user-attachments/assets/75c91583-bcf3-4d78-a1b3-12f83b2a9819" />
