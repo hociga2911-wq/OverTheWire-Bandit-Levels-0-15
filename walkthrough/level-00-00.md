@@ -16,7 +16,7 @@ After successfully logging in, the objective is to find the password required fo
 
 ---
 
-## 🛠️ Tools and Commands Used
+## Tools and Commands Used
 
 - SSH
 - Linux Command Line
@@ -32,6 +32,9 @@ The first step is to connect to the Bandit server using SSH.
 ```bash
 ssh bandit0@bandit.labs.overthewire.org -p 2220
 ```
+
+<img width="1329" height="795" alt="image" src="https://github.com/user-attachments/assets/2a921862-970b-4f8e-8ba4-95f877fd9411" />
+
 
 ## Command Explanation
 
@@ -117,6 +120,10 @@ After logging in, the next step is to check what files are available in the curr
 Use:
 
 ls
+
+<img width="346" height="55" alt="image" src="https://github.com/user-attachments/assets/818e00b2-8950-42b0-a51b-d3448be5ddf9" />
+
+
 ## Command Explanation
 
 ls stands for list.
@@ -147,6 +154,10 @@ After finding the readme file, we need to read its contents.
 Use:
 
 cat readme
+
+<img width="1116" height="162" alt="image" src="https://github.com/user-attachments/assets/47cfb0fe-9a8e-4f43-a0ef-f6a19aea7215" />
+
+
 ## Command Explanation
 
 cat is a Linux command used to display the contents of a file directly in the terminal.
