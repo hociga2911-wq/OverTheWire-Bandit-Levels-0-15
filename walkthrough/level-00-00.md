@@ -109,79 +109,10 @@ This is normal security behavior.
 
 After successful authentication, a shell prompt similar to the following appears:
 
+```bash
 bandit0@bandit:~$
+```
 
 This confirms that the login was successful.
-
-# Step 3 – List the Files
-
-After logging in, the next step is to check what files are available in the current directory.
-
-Use:
-
-ls
-
-<img width="346" height="55" alt="image" src="https://github.com/user-attachments/assets/818e00b2-8950-42b0-a51b-d3448be5ddf9" />
-
-
-## Command Explanation
-
-ls stands for list.
-
-It is used to display the files and directories in the current working directory.
-
-Example:
-
-bandit0@bandit:~$ ls
-readme
-
-The output shows:
-
-readme
-
-This means that a file named readme exists in the current directory.
-
-Why did we use ls?
-
-We do not know the exact location or name of the file containing the next password.
-
-Therefore, we first inspect the current directory using ls.
-
-# Step 4 – Read the readme File
-
-After finding the readme file, we need to read its contents.
-
-Use:
-
-cat readme
-
-<img width="1116" height="162" alt="image" src="https://github.com/user-attachments/assets/47cfb0fe-9a8e-4f43-a0ef-f6a19aea7215" />
-
-
-## Command Explanation
-
-cat is a Linux command used to display the contents of a file directly in the terminal.
-
-
-The cat command reads and displays the contents of a file.
-
-readme
-
-readme is the name of the file we found using the ls command.
-
-Therefore:
-
-cat readme
-
-means:
-
-Display the contents of the readme file.
-
-The output contains the password required for Bandit Level 1.
-
-# Step 5 - Exit the Bandit0
-
-Exit the Bandit0 using exit command
-
-<img width="610" height="80" alt="image" src="https://github.com/user-attachments/assets/fe0ec7fa-30f1-41e4-904a-33f1a1da211a" />
+Next move to level 1.
 
