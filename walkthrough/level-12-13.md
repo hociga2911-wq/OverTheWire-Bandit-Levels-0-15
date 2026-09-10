@@ -12,46 +12,55 @@ Use a temporary directory because the home directory is not the right place for 
 mktemp -d
 ```
 
+<img width="616" height="137" alt="image" src="https://github.com/user-attachments/assets/0ef7d095-9014-431b-8a96-e8bb7e5324f2" />
+
+
 Copy the path printed by the command, then:
 
 ```bash
 cd /tmp/<your-directory>
 cp ~/data.txt .
-xxd -r data.txt > data
-file data
+mv data.txt new.txt
+ls
+xxd -r new.txt binary
+ls
 ```
+
+<img width="911" height="220" alt="image" src="https://github.com/user-attachments/assets/afd12f48-f6f7-45fe-91a8-33867c3eac7a" />
+
 
 Now repeatedly identify the format with `file` and decompress it.
 
 Typical sequence in the current standard Bandit layout:
 
 ```bash
-mv data data.gz
-gzip -d data.gz
-file data
+mv binary binary.gz
+gzip -d binary.gz
+file binary
 
-mv data data.bz2
-bzip2 -d data.bz2
-file data
+mv binary binary.bz2
+bzip2 -d binary.bz2
+file binary
 
-mv data data.gz
-gzip -d data.gz
-file data
+mv binary binary.gz
+gzip -d binary.gz
+file binary
 
-mv data data.tar
-tar -xf data.tar
+
+tar -xf binary
+ls
 file data5.bin
 
-mv data5.bin data5.tar
-tar -xf data5.tar
+
+tar -xf data5.bin
+ls
 file data6.bin
 
-mv data6.bin data6.bz2
-bzip2 -d data6.bz2
-file data6
+tar -xf data6.bin
+ls
 
-mv data6 data6.tar
-tar -xf data6.tar
+tar -xf data8.bin
+ls
 file data8.bin
 
 mv data8.bin data8.gz
@@ -61,7 +70,18 @@ file data8
 cat data8
 ```
 
+
+<img width="1818" height="777" alt="image" src="https://github.com/user-attachments/assets/c46a47f3-30ca-4370-9353-e9b54605ed7c" />
+
+
+
 Important: do not blindly guess the next format. After every extraction, use `file` and choose the decompression tool that matches the detected format.
+
+
+
+<img width="1731" height="757" alt="image" src="https://github.com/user-attachments/assets/236d017b-2a91-47df-b748-2df6988e7539" />
+
+
 
 Then:
 
@@ -69,28 +89,12 @@ Then:
 ssh bandit13@bandit.labs.overthewire.org -p 2220
 ```
 
+<img width="1082" height="384" alt="image" src="https://github.com/user-attachments/assets/f276328e-05aa-4b6e-b9c4-34b94a2b8bba" />
 
-## 3. Explanation
 
-The main idea is to use the information given by the challenge to narrow down the correct file, data representation, authentication method, or network service. The commands above are intentionally shown in the order they should be executed.
 
-## 4. Key Concepts Learned
 
-- Hexdumps\n- `xxd -r`\n- gzip\n- bzip2\n- tar\n- file identification\n- temporary workspaces.
-
-## 5. Result
-
-**Status:** Completed.
-
-**Password obtained:** Do not publish the password in GitHub. Save it privately in your own notes if needed.
-
-## 6. Evidence
-
-Add your screenshot here:
-
-`../screenshots/level-12-13.png`
-
-## 7. Next Level
+## 3. Next Level
 
 Use the password obtained from the terminal to authenticate to the next Bandit user on SSH port `2220`.
 
