@@ -6,6 +6,11 @@ The password is stored in a hidden file inside the `inhere` directory.
 
 ## 2. Step-by-Step Solution
 
+First use ls for listing the files. It gives a inhere directory. Enter into a directory using cd directory name (inhere) command,then list the file using ls. But the directory has no files, it was hidden.
+
+so use ls -la for showing hidden files.
+
+
 ```bash
 ls
 cd inhere
@@ -13,7 +18,18 @@ ls
 ls -la
 ```
 
+<img width="338" height="60" alt="image" src="https://github.com/user-attachments/assets/2892439a-ee31-42ed-959a-c724e5a73836" />
+
+
+<img width="338" height="60" alt="image" src="https://github.com/user-attachments/assets/6ff623c6-0d24-47a6-b8de-23fbdca82b1b" />
+
+
 `ls` does not normally show hidden files. `ls -la` reveals them.
+
+
+<img width="1026" height="127" alt="image" src="https://github.com/user-attachments/assets/23f6696c-e1c1-46e6-8f48-7947581246e1" />
+
+
 
 Read the hidden file shown by the listing. In the standard Bandit layout it is:
 
@@ -21,34 +37,24 @@ Read the hidden file shown by the listing. In the standard Bandit layout it is:
 cat ./...Hiding-From-You
 ```
 
+<img width="661" height="36" alt="image" src="https://github.com/user-attachments/assets/31264815-7576-4bcb-b2b2-187671cd9fec" />
+
+
+TH
+
+
 Then:
 
 ```bash
 ssh bandit4@bandit.labs.overthewire.org -p 2220
 ```
 
+<img width="845" height="366" alt="image" src="https://github.com/user-attachments/assets/bcae02cf-1d74-444f-a5a2-ba97ff3be005" />
 
-## 3. Explanation
 
-The main idea is to use the information given by the challenge to narrow down the correct file, data representation, authentication method, or network service. The commands above are intentionally shown in the order they should be executed.
 
-## 4. Key Concepts Learned
 
-- Hidden files\n- dot-prefix filenames\n- `ls -a`\n- `ls -l`\n- directory navigation.
-
-## 5. Result
-
-**Status:** Completed.
-
-**Password obtained:** Do not publish the password in GitHub. Save it privately in your own notes if needed.
-
-## 6. Evidence
-
-Add your screenshot here:
-
-`../screenshots/level-03-04.png`
-
-## 7. Next Level
+## 3. Next Level
 
 Use the password obtained from the terminal to authenticate to the next Bandit user on SSH port `2220`.
 
