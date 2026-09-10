@@ -6,16 +6,25 @@ The password is stored in a file named `-` in the home directory.
 
 ## 2. Step-by-Step Solution
 
+Use ls command to list the files
+
+
 ```bash
 ls
 cat ./-
 ```
+
 <img width="290" height="59" alt="image" src="https://github.com/user-attachments/assets/c7a7bf8c-907e-4960-be2f-c1aa3f380be0" />
+
+
+we use cat command to find the password inside the file 
+
 
 <img width="340" height="35" alt="image" src="https://github.com/user-attachments/assets/bcaf2cf8-03de-4d6b-8e9c-213ac98de371" />
 
 
-The `./` prefix is important because `-` can otherwise be interpreted as an option.
+The `./` prefix is important because `-` can otherwise be interpreted as an option. 
+
 We get a password to unlock level 2.
 
 Then:
@@ -26,6 +35,8 @@ ssh bandit2@bandit.labs.overthewire.org -p 2220
 
 <img width="939" height="348" alt="image" src="https://github.com/user-attachments/assets/2565ff3e-b1b3-4870-a88d-9e196df639e9" />
 
+
+Type the password and move to next level
 
 ## 3. Explanation
 
